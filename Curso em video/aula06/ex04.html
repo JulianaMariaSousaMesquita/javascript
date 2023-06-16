@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu primeiro programa</title>
+    <style>
+        body {
+            background: #114357;  /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #F29492, #114357);  /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #F29492, #114357); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            font: normal 20pt Arial;
+            color: #FFFFFF;
+        }
+    </style>
+</head>
+<body>
+    <h1> Aula 06</h1>
+    <p>Exercicio 03</p> 
+    <script>        
+        var nome = window.prompt('Qual é seu nome')
+        window.alert(`${nome.toLocaleUpperCase()} seu nome tem ${nome.length} letras.`)
+        document.write(`Olá, ${nome.toLocaleUpperCase()}. Seu nome tem ${nome.length} letras.`)
+        var salario = Number(window.prompt(`${nome.toLocaleUpperCase()} digite seu salario : `))
+        document.write(`<br/> ${nome.toLocaleLowerCase()}, seu salario é ${salario.toFixed(2).replace('.',',')}`)
+        document.write(`<br/> BR =  ${salario.toLocaleString('pt-BR',{style: 'currency', currency: 'BRL'})}`)
+        document.write(`<br/> USD =  ${salario.toLocaleString('pt-BR',{style: 'currency', currency: 'USD'})}`)
+        document.write(`<br/> EUR =  ${salario.toLocaleString('pt-BR',{style: 'currency', currency: 'EUR'})}`)
+    </script>
+</body>
+</html>
