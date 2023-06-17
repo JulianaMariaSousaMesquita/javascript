@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript - Aula 09 (Exercicio 05)</title>
+    <style>
+        body {
+            background: #114357;  /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #F29492, #114357);  /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #F29492, #114357); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            font: normal 20pt Arial;
+            color: #FFFFFF;
+        }
+    </style>
+</head>
+<body>
+    <h1> Aula 09 </h1>
+    <p>Exercicio 05 - Primeiros passos com DOM</p>
+    <p>Aprendendo a usar o <strong>DOM</strong> em Javascript.</p>
+    <p>Aqui vai o resultado</p>
+    <div id="msg">Mensagem 1</div>
+    <div name="msg">Mensagem 2</div>
+    <div class="msg">Mensagem 3</div>
+    <div class="msg4">Mensagem 4</div>
+    <div id="msg4">Mensagem 5</div>
+    <script>   
+        var corpo = window.document.body
+        var p1 = window.document.getElementsByTagName('p')[2]
+
+        p1.style.color = 'blue'
+        corpo.style.background = 'black'
+        
+        var m1 = window.document.getElementById('msg')
+        m1.style.background = 'yellow'
+        m1.style.color = 'red'
+        m1.innerText = 'Estou Aguardando...'
+
+        window.document.getElementsByName('msg')[0].innerText = 'Mensagem alterada (2)!'
+        window.document.getElementsByClassName('msg')[0].innerText = 'Mensagem alterada (3)!'
+        window.document.querySelector('div.msg4').innerText = 'Mensagem alterada (4)!'
+        window.document.querySelector('div#msg4').innerText = 'Mensagem alterada (5)!'
+
+    </script>
+</body>
+</html>
