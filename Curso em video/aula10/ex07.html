@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript - Aula 10 (Exercicio 07)</title>
+    <style>
+        body {
+            background: #114357;  /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #F29492, #114357);  /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #F29492, #114357); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            font: normal 20pt Arial;
+            color: #FFFFFF;
+        }
+        div.res{
+            background: #FFFFFF;
+            color: #000000;
+            width: 50%;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1> Aula 10 </h1>
+    <p>Exercicio 07 - Somando números</p>
+    <input type="number" name="txtn1" id="txtn1"> +
+    <input type="number" name="txtn2" id="txtn2">
+    <input type="button" value="Somar" onclick="somar()">
+    <div id="res" class="res"></div>
+    <script>
+        function somar() {
+            var tn1 = window.document.getElementById("txtn1")
+            var tn2 = window.document.querySelector('input#txtn2')
+            var res = window.document.querySelector('div#res')
+            var n1 = Number(tn1.value)
+            var n2 = Number(tn2.value)
+            var s = n1 + n2
+            res.innerText = `A soma entre ${n1} e ${n2} é igual a ${s}`
+        }
+    </script>
+</body>
+</html>

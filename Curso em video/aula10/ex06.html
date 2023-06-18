@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript - Aula 10 (Exercicio 06)</title>
+    <style>
+        body {
+            background: #114357;  /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #F29492, #114357);  /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #F29492, #114357); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            font: normal 20pt Arial;
+            color: #FFFFFF;
+        }
+        div.area {
+            background: #4CA1AF;  /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #C4E0E5, #4CA1AF);  /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #C4E0E5, #4CA1AF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1> Aula 10 </h1>
+    <p>Exercicio 06</p>
+    <div id="area1" class="area" onclick="clicar()" onmouseenter="entrar()" onmouseout="sair()">
+        Interaja...
+    </div>
+        
+    <div id="area2" class="area" onclick="clicar()" onmouseenter="entrar()" onmouseout="sair()">
+        Interaja...
+    </div>
+    <script>   
+        var a1 = window.document.getElementById('area1')     
+
+        function clicar() {            
+            a1.innerText = 'Clicou'
+            a1.style.background = '-webkit-linear-gradient(to right, #000000, #434343)'
+            a1.style.background = 'linear-gradient(to right, #000000, #434343)'
+        }
+
+        function entrar() {
+            a1.innerText = 'Entrou'
+            a1.style.background = '-webkit-linear-gradient(to right, #834d9b, #d04ed6)'
+            a1.style.background = 'linear-gradient(to right, #834d9b, #d04ed6)'
+        }
+
+        function sair() {
+            a1.innerText = 'Saiu'
+            a1.style.background = '-webkit-linear-gradient(to right, #0099f7, #f11712)'
+            a1.style.background = 'linear-gradient(to right, #0099f7, #f11712)'
+        }
+
+        var a2 = window.document.getElementById('area2')
+        a2.addEventListener('click', clicar2)
+        a2.addEventListener('mouseenter', entrar2)
+        a2.addEventListener('mouseout', sair2)
+
+        function clicar2() {            
+            a2.innerText = 'Clicou'
+            a2.style.background = '-webkit-linear-gradient(to right, #2f7336, #aa3a38)'
+            a2.style.background = 'linear-gradient(to right, #2f7336, #aa3a38)'
+        }
+
+        function entrar2() {
+            a2.innerText = 'Entrou'
+            a2.style.background = '-webkit-linear-gradient(to right, #c02425, #f0cb35)'
+            a2.style.background = 'linear-gradient(to right, #c02425, #f0cb35)'
+        }
+
+        function sair2() {
+            a2.innerText = 'Saiu'
+            a2.style.background = '-webkit-linear-gradient(to right, #8e0e00, #1f1c18)'
+            a2.style.background = 'linear-gradient(to right, #8e0e00, #1f1c18)'
+        }
+    </script>
+</body>
+</html>
