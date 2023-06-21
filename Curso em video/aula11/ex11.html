@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estrangeiro</title>
+    <style>
+        body {
+            background: #c2e59c;  /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #64b3f4, #c2e59c);  /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #64b3f4, #c2e59c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            font: normal 20pt Arial;
+            color: #FFFFFF;
+        }
+        div.res{
+            background: #FFB75E;  /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #ED8F03, #FFB75E);  /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #ED8F03, #FFB75E); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            width: 50%;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Detector de estrangeiro</h1>
+        País: <input type="text" name="txtvel" id="txtvel">
+        <input type="button" value="Verificar" onclick="estrangeiro()">
+        <div id="velRes">
+
+        </div>
+        <div id="res" class="res">
+
+        </div>
+    </div>
+    <script>        
+        function estrangeiro() {
+            var txte = window.document.querySelector('input#txtvel')
+            var msg = window.document.querySelector('div#velRes')
+            var res = window.document.querySelector('div.res')
+            var es = String(txte.value)
+
+            msg.innerHTML = '<p>Bem-Vindo(a)!</p>'
+
+            if (es.toLocaleUpperCase() !== "BRASIL"){
+                res.innerHTML = '<p>Você é estrangeiro!</p>'
+                msg.innerHTML += `<strong> Hello Are you okay?</strong>`
+            } else {
+                res.innerHTML = 'Você é Brasileiro!'
+                msg.innerHTML += `<strong> Fala ai BR, blz?</strong>`
+            }           
+        }
+    </script>
+</body>
+</html>
