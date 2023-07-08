@@ -2,7 +2,7 @@
 Curso de linguagem JavaScript, voltado para iniciantes e para quem quiser aprender mais sobre ECMAScript, a versão padronizada do JS. Em um curso patrocinado pelo Google, o professor Gustavo Guanabara vai ensinar o conteúdo básico em 6 módulos que vão desde o conhecimento da linguagem até o uso de funções.
 ### 6 módulos •  33 aulas • Duração total: 40h
 - <a href="https://www.cursoemvideo.com/curso/javascript/"> Curso em video </a>
-- <a hre="https://www.youtube.com/watch?v=1-w1RfGIov4&list=PLHz_AreHm4dlsK3Nr9GVvXCbpQyHQl1o1">Playlist YouTube</a>
+- <a href="https://www.youtube.com/watch?v=1-w1RfGIov4&list=PLHz_AreHm4dlsK3Nr9GVvXCbpQyHQl1o1">Playlist YouTube</a>
 - Introdução – JavaScript Moderno
 - Módulo A: Conhecendo o JavaScript
     -  Aula 1 – O que o JavaScript é capaz de fazer?
@@ -41,7 +41,7 @@ Curso de linguagem JavaScript, voltado para iniciantes e para quem quiser aprend
 Curso de Javascript Completo e Profissional disponíveis no nosso canal do Youtube CFBCursos: conceitos básicos e essenciais de JavaScript, conceitos de lógica de programação aplicados em JavaScript, utilizar HTML e CSS para construção dos projetos e práticas do curso, realizar manipulação dos elementos HTML (DOM) e CSS via JavaScript, praticar as habilidades através de criação de aplicações locais ou em nuvem, simples e complexas utilizando JavaScript, HTML e CSS, estruturas condicionais para tomadas de decisão em JavaScript, estruturas de repetição/loop em JavaScript, criação de funções e tipos de funções que podemos criar em JavaScript, manipular objetos no DOM com JavaScript, functions, objetos, modularização, regEx, JSON, AJAX.
 ### 200 aulas • Duração total: 44h 
 - <a href="https://cfbcursos.com.br/"> CFBcursos </a>
-- <a hre="https://www.youtube.com/watch?v=E4DBTqgxHGM&list=PLx4x_zx8csUg_AxxbVWHEyAJ6cBdsYc0T">Playlist YouTube</a>
+- <a href="https://www.youtube.com/watch?v=E4DBTqgxHGM&list=PLx4x_zx8csUg_AxxbVWHEyAJ6cBdsYc0T">Playlist YouTube</a>
 - Novo Curso de Javascript Completo, Profissional e Moderno - Curso de Javascript Moderno - Aula 01 - Duração: 14:37
 - Javascript em Modo Estrito, você sabe o que é? - Curso de Javascript Moderno - Aula 02 - Duração: 7:18
 - Dicas importantes para o curso - Curso de Javascript Moderno - Aula 01B - Duração: 4:03
