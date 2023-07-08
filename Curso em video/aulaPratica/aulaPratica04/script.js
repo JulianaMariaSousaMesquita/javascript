@@ -3,11 +3,7 @@ var result = window.document.getElementById('result')
 var fim = window.document.getElementById('finalizar')
 
 function media(vet){
-    let valor = 0
-    for(val in vet){
-        valor += vet[val]
-    }
-    return (valor/(vet.length))
+    return ((soma(vet))/(vet.length))
 }
 
 function soma(vet){
@@ -24,22 +20,22 @@ function add(){
         if(vetor.indexOf(v) === -1){
             vetor.push(v)
             result.innerHTML += `<option value="${v}">Valor ${v} adicionado</option>`
+            fim.innerHTML = ' '
         }else{
             alert(`O valor ${v} já esta cadastrado, digite outro valor porfavor!`)
         }
     }else{
         alert('Digite valor entre 1 e 100')
     }
+    window.document.getElementById('val').value = ''
+    window.document.getElementById('val').focus()
 }
 
 function finalizar(){
     fim.innerHTML = ''
     if( vetor.length > 0){
-        vetor.sort()
-        if(vetor.indexOf(100) !== -1){
-            vetor.splice((vetor.indexOf(100)), 1);
-            vetor.push(100)
-        }
+        vetor.sort((a, b) => a -b)
+      
         fim.innerHTML += `Ao todo, temos ${vetor.length} números cadastrados. <BR/>
         O maior valor informado foi ${vetor[vetor.length - 1]}. <BR/>
         O menor valor informado foi ${vetor[0]}. <BR/>
@@ -52,5 +48,6 @@ function finalizar(){
 
 function limpar(){
     result.innerHTML = ''
+    fim.innerHTML = ' '
     vetor = []
 }
